@@ -1,0 +1,11 @@
+version: '2'
+services:
+  aoikconsulwatcherhosts:
+    image: aoikuiyuyou/aoikconsulwatcherhosts
+    volumes:
+      - "/etc/hosts:/etc/hosts"
+    environment:
+      - SERVICE_NAME=aoikconsulwatcherhosts
+      - CONSUL_HOST=127.0.0.1
+      - CONSUL_PORT=8500
+      - DOMAIN_IP=127.0.0.1
